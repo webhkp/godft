@@ -7,6 +7,15 @@ Elevate your data management with a tool that offers flexibility, automation, an
 
 **Full Documentation**: <a href="https://webhkp.com/godft/godft-home">https://webhkp.com/godft/godft-home</href>
 
+# Installation
+Run the following command to install GoDFT (make sure you have golang installed)-
+
+```shell
+go install github.com/webhkp/godft@latest
+```
+
+Or, you can install the binaries from the release page-
+<a href="https://github.com/webhkp/godft/releases">https://github.com/webhkp/godft/releases</a>
 
 # Usage
 
