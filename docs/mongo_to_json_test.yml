@@ -1,0 +1,34 @@
+# Source service
+my-mongo-input:
+  driver: mongo
+  connection: mongodb://webhkp:secretpass@localhost:27017/?maxPoolSize=20&w=majority
+  database: bigboxcode
+  collection:
+    customer:
+      limit: 4
+      sort:
+        age: -1
+      field:
+        - address.city
+        - age
+        - name
+    product:
+      limit: 10
+      sort:
+        id: -1
+    order:
+      field:
+        - price
+        - customer
+        - quantity
+      sort:
+        price: 1
+        quantity: -10
+      limit: 22
+
+# Destination service
+json-child:
+  driver: json
+  input: my-mongo-input # Define the source, from which this service will get data
+  outputPath: ./docs/testres/
+  readOnly: false # Make this instance writable

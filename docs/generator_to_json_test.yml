@@ -1,0 +1,34 @@
+# Source service
+my-generator:
+  driver: generator
+  collection:
+    customer:
+      field:
+        full_name: name
+        age: number:10:90
+        address: address
+        customerid: number
+        phone: phone
+        number1: number:100:200
+        number2: number:100
+        number3: number::200
+        decimal1: decimal:20
+        id: number::400
+        sku: uuid
+        price: decimal::99
+    product:
+      limit: 3
+      
+    order:
+      limit: 5
+
+      field:
+        price: number
+        product: uuid
+        quantity: number:1:25
+
+# Destination service
+fake-data-json-child:
+  driver: json
+  input: my-generator
+  readOnly: false

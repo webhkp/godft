@@ -1,0 +1,74 @@
+[
+  {
+    "_id": "65b8552c8d62d775440a0476",
+    "address": {
+      "city": "Pueblo West",
+      "postalCode": "81007",
+      "state": "CO",
+      "street": "11 North Vineyard Drive"
+    },
+    "age": 19,
+    "name": "Izabella Conroy",
+    "phone": "108-679-2154"
+  },
+  {
+    "_id": "65b8552c8d62d775440a0477",
+    "address": {
+      "city": "Arvada",
+      "postalCode": "80003",
+      "state": "CO",
+      "street": "8532 Ingalls Circle"
+    },
+    "age": 72,
+    "name": "Alisa Parker",
+    "phone": "768-319-1054"
+  },
+  {
+    "_id": "65b8552c8d62d775440a0478",
+    "address": {
+      "city": "Edmond",
+      "postalCode": "73025",
+      "state": "OK",
+      "street": "632 Belmar Drive"
+    },
+    "age": 29,
+    "name": "Eloise Weber",
+    "phone": "618-357-2104"
+  },
+  {
+    "_id": "65b8589159c4fa3bd4510d10",
+    "address": {
+      "city": "Pueblo West",
+      "postalCode": "81007",
+      "state": "CO",
+      "street": "11 North Vineyard Drive"
+    },
+    "age": 19,
+    "name": "Izabella Conroy",
+    "phone": "108-679-2154"
+  },
+  {
+    "_id": "65b8589159c4fa3bd4510d11",
+    "address": {
+      "city": "Arvada",
+      "postalCode": "80003",
+      "state": "CO",
+      "street": "8532 Ingalls Circle"
+    },
+    "age": 72,
+    "name": "Alisa Parker",
+    "phone": "768-319-1054"
+  },
+  {
+    "_id": "65b8589159c4fa3bd4510d12",
+    "address": {
+      "city": "Edmond",
+      "postalCode": "73025",
+      "state": "OK",
+      "street": "632 Belmar Drive"
+    },
+    "age": 29,
+    "name": "Eloise Weber",
+    "phone": "618-357-2104"
+  }
+]

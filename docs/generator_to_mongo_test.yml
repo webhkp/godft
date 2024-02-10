@@ -1,0 +1,38 @@
+# Source service
+my-generator:
+  driver: generator
+  collection:
+    customer:
+      field:
+        full_name: name
+        age: number:10:90 # Minimum value 10, maximum value 90
+        address: address
+        customerid: number
+        phone: phone
+        number1: number:100:200
+        number2: number:100
+        number3: number::200
+        decimal1: decimal:20 # Minimum 20
+        id: number::400 # Max vlaue 400
+        sku: uuid
+        price: decimal::99
+    product:
+      limit: 3
+      
+    ordersample:
+      limit: 50
+
+      field:
+        price: number
+        product: uuid
+        quantity: number:1:25
+
+
+# Destination service
+my-mongo-output:
+  driver: mongo
+  connection: mongodb://webhkp:secretpass@localhost:27017/?maxPoolSize=20&w=majority
+  database: godft
+  readOnly: false # Make this service writable
+  input: my-generator # define the input service
+

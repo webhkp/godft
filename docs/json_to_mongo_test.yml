@@ -1,0 +1,12 @@
+json-parent:
+  driver: json
+  inputPath:
+    - ./docs/testres/ # All json file from this directory
+    - ./docs/customer_sample.json
+
+my-mongo:
+  driver: mongo
+  connection: mongodb://webhkp:secretpass@localhost:27017/?maxPoolSize=20&w=majority
+  database: godft
+  readOnly: false
+  input: json-parent # Receive data from "json_parent" service

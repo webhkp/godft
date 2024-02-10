@@ -1,0 +1,14 @@
+mysql-source:
+  driver: mysql
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: root
+  database: issue_tracker
+  collection: all
+
+json-child:
+  driver: json
+  input: mysql-source
+  outputPath: ./docs/testres/
+  readOnly: false

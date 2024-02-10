@@ -1,0 +1,15 @@
+# Source MongoDB service
+my-mongo-input:
+  driver: mongo
+  connection: mongodb://webhkp:secretpass@localhost:27017/?maxPoolSize=20&w=majority
+  database: bigboxcode
+  collection: all # copy all collections from this mongo instance
+
+
+# Destination MongoDB service
+my-mongo-output:
+  driver: mongo
+  connection: mongodb://webhkp:secretpass@localhost:27017/?maxPoolSize=20&w=majority
+  database: godft
+  readOnly: false # make this instance
+  input: my-mongo-input # Define the service from which this one gets data
