@@ -5,7 +5,7 @@ and precision data mapping.
 
 Elevate your data management with a tool that offers flexibility, automation, and reliability, ensuring your data workflows are efficient and powerful.
 
-**Full Documentation**: <a href="https://webhkp.com/godft/godft-home">https://webhkp.com/godft/godft-home</href>
+**Full Documentation**: <a href="https://webhkp.com/godft">https://webhkp.com/godft</a>
 
 # Installation
 Run the following command to install GoDFT (make sure you have golang installed)-
@@ -324,16 +324,24 @@ godft run generator_to_json_test.yml
     <tr>
         <td>Full Documentation</td>
         <td>
-            <a href="https://webhkp.com/godft/godft-home">
-              https://webhkp.com/godft/godft-home
+            <a href="https://webhkp.com/godft">
+              https://webhkp.com/godft
             </a>
         </td>
     </tr>
     <tr>
         <td>Configuration Details</td>
         <td>
-            <a href="https://webhkp.com/godft/godft-config">
-              https://webhkp.com/godft/godft-config
+            <a href="https://webhkp.com/godft/godft-configuration">
+              https://webhkp.com/godft/godft-configuration
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>Internals</td>
+        <td>
+            <a href="https://webhkp.com/godft/godft-internals">
+              https://webhkp.com/godft/godft-internals
             </a>
         </td>
     </tr>
